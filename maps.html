@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Maps</title>
+</head>
+<body>
+<span id="Yuvi"></span>
+
+<script>
+
+	var z=""; 
+	
+	
+	a=prompt("Enter A's Name ");
+	am=parseInt(prompt("Enter A's marks"));
+	b=prompt("Enter B's Name");
+	bm=parseInt(prompt("Enter B's marks"));
+
+	const student = new Map();
+
+	student.set("a",am);
+	student.set("b",bm);
+	student.forEach(yuvraj);
+
+	document.getElementById("Yuvi").innerHTML=(z);
+	
+	function yuvraj( key, value)
+	{
+		z=z+key+""+value+"<br>";
+	}
+	</script>
+</body>
+</html>
